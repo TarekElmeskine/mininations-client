@@ -1,0 +1,28 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+p.Paragraphe-standard {
+  -epub-ruby-position:over;
+  color:#000000;
+  font-family:"Minion Pro", serif;
+  font-size:12px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  line-height:1.2;
+  margin-bottom:0px;
+  margin-left:0px;
+  margin-right:0px;
+  text-align:left;
+  text-decoration:none;
+  text-indent:0px;
+}
+span.texte-larish {
+  font-family:LarishNeueSemibold, serif;
+  font-size:14px;
+  font-style:normal;
+  font-weight:normal;
+}
