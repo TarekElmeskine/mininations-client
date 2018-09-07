@@ -1,0 +1,30 @@
+p.Paragraphe-standard {
+  -epub-ruby-position:over;
+  color:#000000;
+  font-family:"Minion Pro", serif;
+  font-size:12px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  line-height:1.2;
+  margin-bottom:0px;
+  margin-left:0px;
+  margin-right:0px;
+  text-align:left;
+  text-decoration:none;
+  text-indent:0px;
+}
+p.para-style-override-5 {
+  font-family:LarishNeueSemibold, serif;
+  font-size:10px;
+  font-style:normal;
+  font-weight:normal;
+  text-align:center;
+}
+p.para-style-override-4 {
+  font-family:LarishNeueSemibold, serif;
+  font-size:48px;
+  font-style:normal;
+  font-weight:normal;
+  text-align:center;
+}

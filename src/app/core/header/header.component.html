@@ -1,16 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a routerLink="/" class="navbar-brand">Mininations</a>
-  <div class="navbar-default">
+  <a class="navbar-brand" routerLink="/">Mininations</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
     <ul class="navbar-nav text-uppercase">
-      <li class="nav-item" routerLinkActive="active"><a routerLink="expliquer" class="nav-link">Expliquer</a></li>
-      <li class="nav-item" routerLinkActive="active"><a href="" class="nav-link">Créer</a></li>
-      <li class="nav-item" routerLinkActive="active"><a href="" class="nav-link">Explorer</a></li>
-      <li class="nav-item" routerLinkActive="active"><a href="" class="nav-link">Contact</a></li>
+      <li class="nav-item" routerLinkActive="active"><a routerLink="expliquer" data-toggle="collapse" class="nav-link">Expliquer</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active"><a routerLink="creer" class="nav-link">Créer</a></li>
+      <li class="nav-item" routerLinkActive="active"><a routerLink="explorer" class="nav-link">Explorer</a></li>
+      <li class="nav-item" routerLinkActive="active"><a routerLink="contact" class="nav-link">Contact</a></li>
     </ul>
   </div>
 </nav>
-
-
-
 
 

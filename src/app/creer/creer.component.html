@@ -1,0 +1,39 @@
+<br>
+<div class="row">
+  <div class="col-md-12">
+    <p class="Paragraphe-standard para-style-override-4 text-center">
+      Marre de la politique démente, de l'ingérence gouvernementale et du laxisme social qui ne
+      font que s'aggraver ? Vos impôts deviennent trop lourds à gérer ? Si vous avez toujours
+      pensé que le monde irait mieux si on laissait les peuples le diriger à leur manière, ne perdez
+      pas espoir : vous pouvez fonder une micronation ! Ce n'est sans doute pas facile,
+      mais cela n'a rien d'impossible et nous sommes là pour vous aider à le faire. La réussite
+      de certains, tout comme l'échec des autres, illustrera ce kit de démarrage et vous dévoilera
+      les perspectives de l'édification des nations.
+    </p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <ol class="text-uppercase">
+      <li>Se présenter</li>
+      <li>Pour quelle raison</li>
+      <li>Choisir un territoire</li>
+      <li>Régime politique</li>
+      <li>Trouver un nom</li>
+      <li>Composer sa devise</li>
+      <li>Faire son drapeau</li>
+      <li>Faire son blason</li>
+    </ol>
+    <button class="btn btn-primary"
+            type="button"
+            (click)="onStart()" *ngIf="!isStarted">
+      Commencer!
+    </button>
+  </div>
+  <div class="col-md-6">
+    <div class="col-md-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
