@@ -1,3 +1,48 @@
-<p>
-  se-presenter works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <form (ngSubmit)="onSubmit()" [formGroup]="sePresenterForm">
+      <div class="row">
+        <div class="form-group">
+          <label for="prenom" class="col-xs-2">Prénom</label>
+          <div class="col-xs-10">
+            <input type="text"
+                   class="form-control text-uppercase"
+                   formControlName="prenom"
+                   placeholder="PRENOM"
+                   id="prenom">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="nom" class="col-xs-2">Nom</label>
+          <div class="col-xs-10">
+            <input type="text"
+                   class="form-control text-uppercase"
+                   formControlName="nom"
+                   placeholder="NOM"
+                   id="nom">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="surnom" class="col-xs-2">Surnom</label>
+          <div class="col-xs-10">
+            <input type="text"
+                   class="form-control text-uppercase"
+                   formControlName="surnom"
+                   placeholder="SURNOM"
+                   id="surnom">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="genre" class="col-xs-2">Genre</label>
+          <div class="col-xs-10">
+            <select class="form-control text-uppercase"
+                    formControlName="genre"
+                    id="genre">
+              <option *ngFor="let genre of genres" [value]="genre">{{genre}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

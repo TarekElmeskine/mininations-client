@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-se-presenter',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SePresenterComponent implements OnInit {
 
-  constructor() { }
+  sePresenterForm: FormGroup;
+  genres: string[] = ['Masculin', 'Féminin'];
 
-  ngOnInit() {
+  constructor() {
   }
 
+  ngOnInit() {
+    this.sePresenterForm = new FormGroup({
+      'prenom': new FormControl(null, Validators.required),
+      'nom': new FormControl(null, Validators.required),
+      'surnom': new FormControl(null, Validators.required),
+      'genre': new FormControl(null, Validators.required)
+    });
+  }
+
+  onSubmit() {
+  }
 }
